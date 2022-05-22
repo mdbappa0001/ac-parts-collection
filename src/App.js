@@ -6,6 +6,7 @@ import MyPortfolio from './Pages/About/MyPortfolio';
 import Blogs from './Pages/About/Blogs';
 import Login from './Pages/Login/Login';
 import Purchase from './Pages/Purchase/Purchase';
+import NotFound from './Pages/Shared/NotFound';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path='/purchase' element={<Purchase></Purchase>}></Route>
       <Route path='/blogs' element={<Blogs></Blogs>}></Route>
       <Route path='/login' element={<Login></Login>}></Route>
+      <Route path='*' element={<NotFound></NotFound>}></Route>
     </Routes>
     </div>
   );

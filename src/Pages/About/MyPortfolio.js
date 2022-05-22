@@ -1,10 +1,28 @@
 import React from 'react';
+import photo from "../../images/photo.jpg";
 
 const MyPortfolio = () => {
     return (
-        <div>
-            <h2>This is my portfolio.</h2>
+
+        <div className='px-28'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5'>
+                <div class="card w-96 bg-base-100 shadow-xl mt-12">
+                    <figure><img src={photo} alt=" " /></figure>
+                </div>
+
+                <div class="card w-96 bg-base-200 text-primary-content mt-12">
+                    <div class="card-body">
+                        <h2 className='font-bold '>Name : <span className='text-xl font-bold text-red-500'>ABU TANIF MD BAPPA</span></h2><br />
+                        <h2 className='font-bold'>Email : <span className='text-xl font-bold text-red-500'>abutanif366@gmail.com</span></h2><br />
+                        {/* <h2><span className='text-xl font-bold'>Edu. BackGround</span> : Sylhet Agricultural University</h2> */}
+                        <h2 className='font-bold'>Educational BackGround : <span className='text-xl font-bold text-red-500'>Sylhet Agricultural University.</span></h2><br />
+                        <h2 className='font-bold'>Skill : <span className='text-xl font-bold text-red-500'>HTML, CSS, REACT, NodeJS, MongoDB, PowerPoint, LeaderShip.</span></h2>
+                        <h2 className='font-bold'>Website Link : <span className='text-xl font-bold text-red-500'></span></h2>
+                    </div>
+                </div>
+            </div>
         </div>
+
     );
 };
 

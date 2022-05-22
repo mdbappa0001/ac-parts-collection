@@ -1,11 +1,12 @@
 import React from 'react';
+import react from "../../images/react.png";
 
 const Blogs = () => {
     return (
         <div>
             <div class="hero min-h-screen">
                 <div class="hero-content flex-col lg:flex-row">
-                    <img src="https://api.lorem.space/image/movie?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" alt='' />
+                    <img src={react} class="max-w-sm rounded-lg shadow-2xl" alt='' />
                     <div>
                         <h1 class="text-3xl font-bold text-red-600">Q-1. <span className='text-red-900'>How will you improve the performance of a React Application?</span></h1>
                         <p class="py-3"> 1.Keeping component state local where necessary. </p>
