@@ -1,29 +1,36 @@
 [
     {
-        "id": 1,
-        "quantity": 5,
-        "name": "Ford Motor",
-        "img": "../src/images/parts/compressor.png",
-        "price": "$65,000",
-        "description": "Ford Motor Company is an automobile company. The Company designs, manufactures, markets, and services a full line of electrified passenger and commercial vehicles, such as Ford trucks, utility vehicles, vans, and cars, and Lincoln luxury vehicles.",
+        "_id": 1,
+        "minimumOrder": 200,
+        "availableQuantity": 2000,
+        "name": "Compressor",
+        "img": "https://i.ibb.co/gtwmQMS/compressor.png",
+        "price": "$65.00",
+        "description": "The job of the compressor is to pressurize the refrigerant, thus raising its temperature. Due to the combined gas law that if pressure increases so does its temperature, when you compress.",
         "supplierName": "Lorem Cox"
     },
     {
-        "id": 2,
-        "quantity": 12,
-        "name": "Lamborghini ",
-        "img": "../src/images/parts/condenser Coil.png",
-        "price": "$90,700",
-        "description": "Automobili Lamborghini S.p.A. (Italian pronunciation: is an Italian brand and manufacturer of luxury sports cars and SUVs based in Sant'Agata Bolognese. The company is owned by the Volkswagen Group through its subsidiary Audi.",
+        "_id": 2,
+        "availableQuantity": 1500,
+        "minimumOrder": 150,
+        "name": "Condenser Coil",
+        "img": "https://i.ibb.co/N9ktqkk/condenser-Coil.png",
+        "price": "$90.00",
+        "description": "The condenser coil is in the outdoor air conditioning unit. It receives the high pressure, high temperature refrigerant from the compressor. You can think of it as the opposite of the evaporator coil.",
         "supplierName": "Pilan rox"
     },
     {
-        "id": 3,
-        "quantity": 25,
-        "name": "Tesla",
-        "img": "../src/images/parts/expansion Valve.png",
-        "price": "$8,900",
-        "description": "Tesla was founded in 2003 by a group of engineers who wanted to compromise to drive vehicles can be better, quicker and more fun to drive than gasoline cars. Today, Tesla builds not only all-electric vehicles but also infinitely scalable clean energy generation and storage products.",
+        "_id": 3,
+        "availableQuantity": 1200,
+        "minimumOrder": 100,
+        "name": "Expansion Valve",
+        "img": "https://i.ibb.co/Ln61yhx/expansion-Valve.png",
+        "price": "$29.00",
+        "description": "When the refrigerant leaves the condenser in its liquid state, it has dispersed heat, but it is still too hot to enter the evaporator coils. Before the refrigerant passes to the evaporator coils.",
         "supplierName": "Elon Musk"
     }
 ]
+
+
+
+
