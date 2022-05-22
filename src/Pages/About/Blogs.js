@@ -7,7 +7,7 @@ const Blogs = () => {
                 <div class="hero-content flex-col lg:flex-row">
                     <img src="https://api.lorem.space/image/movie?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" alt='' />
                     <div>
-                        <h1 class="text-3xl font-bold text-red-600">Q. <span className='text-red-900'>How will you improve the performance of a React Application?</span></h1>
+                        <h1 class="text-3xl font-bold text-red-600">Q-1. <span className='text-red-900'>How will you improve the performance of a React Application?</span></h1>
                         <p class="py-3"> 1.Keeping component state local where necessary. </p>
                         <p class="py-2"> 2. Memoizing React components to prevent unnecessary re-renders. </p>
                         <p class="py-2"> 3. Code-splitting in React using dynamic import(). </p>
@@ -22,7 +22,7 @@ const Blogs = () => {
 
             <div class="card bg-base-100 shadow-xl">
                 <div class="card-body items-center text-center">
-                    <h2 class="card-title text-red-600 text-3xl">Q. <span className='text-red-900'>What are the different ways to manage a state in a React application?</span></h2>
+                    <h2 class="card-title text-red-600 text-3xl">Q-2. <span className='text-red-900'>What are the different ways to manage a state in a React application?</span></h2>
                     <p className='text-xl font-bold text-primary'>There are four main types of state we need to properly manage in our React application:</p>
                     <ul>
                         <li className='text-xl font-bold'>1. Local state</li>
@@ -33,6 +33,25 @@ const Blogs = () => {
                 </div>
             </div>
 
+
+            <div class="card bg-base-100 shadow-xl mt-12 mb-12">
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title text-red-600 text-3xl">Q-3. <span className='text-red-900'>What is a unit test? Why should write unit tests?</span></h2>
+                    <p className='text-xl  text-primary mt-4'>Unit Testing is a method by which individual units of source code are tested to determine if they are fit for use.</p>
+                    <p className='text-xl'>Its goal is to isolate each part of the program and show that the individual parts are correct.</p>
+                    <p className='text-xl mb-4'>যেমনঃ কোন একটা ক্যালকুলেটর তৈরির পর সেটা মার্কেটে যাবার আগে এর প্রত্যেকটা পার্টস আলাদা আলাদাভাবে সবকিছু ঠিক আছে কিনা চেক করা।যেমনঃ এখানে individual parts বলতে মূলত একটা ক্যালকুলেটরের যোগ / বিয়োগ / গুণ / ভাগ অংশ আলাদা আলাদা ভাবে চেক করে দেখা।</p>
+                    <ul>
+                        <p>Unit Testing করার কারণঃ </p>
+                        <li className='font-bold'>1. It reduces the level of bugs in production code.</li>
+                        <li className='font-bold'>2. It saves our development time.</li>
+                        <li className='font-bold'>3. It saves time in debugging later.</li>
+                        <li className='font-bold'>4. A good unit test are a form of documentation.</li>
+                        <li className='font-bold'>5. Unit test forces us to confront the problem head on.</li>
+                        <li className='font-bold'>6. It allows us to make big changes to code quickly.</li>
+                       
+                    </ul>
+                </div>
+            </div>
 
 
         </div>
