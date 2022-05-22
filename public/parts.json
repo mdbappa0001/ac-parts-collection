@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "quantity": 5,
+        "name": "Ford Motor",
+        "img": "../src/images/parts/compressor.png",
+        "price": "$65,000",
+        "description": "Ford Motor Company is an automobile company. The Company designs, manufactures, markets, and services a full line of electrified passenger and commercial vehicles, such as Ford trucks, utility vehicles, vans, and cars, and Lincoln luxury vehicles.",
+        "supplierName": "Lorem Cox"
+    },
+    {
+        "id": 2,
+        "quantity": 12,
+        "name": "Lamborghini ",
+        "img": "../src/images/parts/condenser Coil.png",
+        "price": "$90,700",
+        "description": "Automobili Lamborghini S.p.A. (Italian pronunciation: is an Italian brand and manufacturer of luxury sports cars and SUVs based in Sant'Agata Bolognese. The company is owned by the Volkswagen Group through its subsidiary Audi.",
+        "supplierName": "Pilan rox"
+    },
+    {
+        "id": 3,
+        "quantity": 25,
+        "name": "Tesla",
+        "img": "../src/images/parts/expansion Valve.png",
+        "price": "$8,900",
+        "description": "Tesla was founded in 2003 by a group of engineers who wanted to compromise to drive vehicles can be better, quicker and more fun to drive than gasoline cars. Today, Tesla builds not only all-electric vehicles but also infinitely scalable clean energy generation and storage products.",
+        "supplierName": "Elon Musk"
+    }
+]
