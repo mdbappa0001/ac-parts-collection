@@ -6,12 +6,12 @@ const MyPortfolio = () => {
 
         <div className='px-28'>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5'>
-                <div class="card w-96 bg-base-100 shadow-xl mt-12">
+                <div className="card w-96 bg-base-100 shadow-xl mt-12">
                     <figure><img src={photo} alt=" " /></figure>
                 </div>
 
-                <div class="card w-96 bg-base-200 text-primary-content mt-12">
-                    <div class="card-body">
+                <div className="card w-96 bg-base-200 text-primary-content mt-12">
+                    <div className="card-body">
                         <h2 className='font-bold '>Name : <span className='text-xl font-bold text-red-500'>ABU TANIF MD BAPPA</span></h2><br />
                         <h2 className='font-bold'>Email : <span className='text-xl font-bold text-red-500'>abutanif366@gmail.com</span></h2><br />
                         {/* <h2><span className='text-xl font-bold'>Edu. BackGround</span> : Sylhet Agricultural University</h2> */}
