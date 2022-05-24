@@ -4,13 +4,19 @@ import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
 
 
-const Purchase = ({partDetails}) => {
+const Purchase = ({partDetails, setPartDetails}) => {
     const [user, loading] = useAuthState(auth);
 
     const {_id, name, img, minimumOrder, availableQuantity, price } = partDetails;
 
     if (loading) {
         return <Loading></Loading>
+    }
+
+    const handlePurchase = event =>{
+        event.preventDefault();
+        console.log(_id, name, minimumOrder);
+        setPartDetails(null);
     }
 
 
@@ -25,7 +31,7 @@ const Purchase = ({partDetails}) => {
                     <h3 class="font-extrabold text-2xl text-center text-primary"> {name}</h3>
                     <h3 class="font-extrabold text-xl text-center mt-2">Price : {price}</h3>
 
-                    <form className='grid grid-cols-1 gap-3 justify-items-center mt-3'>
+                    <form onSubmit={handlePurchase} className='grid grid-cols-1 gap-3 justify-items-center mt-3'>
                         <input type="text" disabled value={_id} class="input input-bordered w-full max-w-xs font-extrabold" />
                         <input type="text" disabled value={user?.displayName} class="input input-bordered w-full max-w-xs font-extrabold" />
                         <input type="text" disabled value={user?.email} class="input input-bordered w-full max-w-xs font-extrabold" />

@@ -24,7 +24,10 @@ const AllParts = () => {
                 ></AllPart>)
             }
         </div>
-        {partDetails && <Purchase partDetails={partDetails}></Purchase>}
+        {partDetails && <Purchase
+         partDetails={partDetails}
+         setPartDetails={setPartDetails}
+         ></Purchase>}
         </>
     );
 };

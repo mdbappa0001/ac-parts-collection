@@ -16,7 +16,6 @@ import DashBoard from './Pages/DashBoard/DashBoard';
 import MyOrders from './Pages/DashBoard/MyOrders';
 import AddReview from './Pages/DashBoard/AddReview';
 import MyProfile from './Pages/DashBoard/MyProfile';
-import Purchases from './Pages/Home/Purchases';
 import AllParts from './Pages/Purchase/AllParts';
 
 
