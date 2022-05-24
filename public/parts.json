@@ -1,6 +1,5 @@
 [
     {
-        "_id": 1,
         "minimumOrder": 200,
         "availableQuantity": 2000,
         "name": "Compressor",
@@ -10,7 +9,6 @@
         "supplierName": "Lorem Cox"
     },
     {
-        "_id": 2,
         "availableQuantity": 1500,
         "minimumOrder": 150,
         "name": "Condenser Coil",
@@ -20,7 +18,6 @@
         "supplierName": "Pilan rox"
     },
     {
-        "_id": 3,
         "availableQuantity": 1200,
         "minimumOrder": 100,
         "name": "Expansion Valve",
@@ -28,8 +25,37 @@
         "price": "$29.00",
         "description": "When the refrigerant leaves the condenser in its liquid state, it has dispersed heat, but it is still too hot to enter the evaporator coils. Before the refrigerant passes to the evaporator coils.",
         "supplierName": "Elon Musk"
+    },
+    {
+        "availableQuantity": 1700,
+        "minimumOrder": 100,
+        "name": "Condenser",
+        "img": "https://i.ibb.co/K56PNN7/condenser.png",
+        "price": "$74.00",
+        "description": "The condenser coil is in the outdoor air conditioning unit. It receives the high pressure, high temperature refrigerant from the compressor. You can think of it as the opposite of the evaporator coil.",
+        "supplierName": "Pilan rox"
+    },
+    {
+        "availableQuantity": 1100,
+        "minimumOrder": 100,
+        "name": "Cooler",
+        "img": "https://i.ibb.co/WKMCf9P/cooler-1.png",
+        "price": "$55.00",
+        "description": "When the refrigerant leaves the condenser in its liquid state, it has dispersed heat, but it is still too hot to enter the evaporator coils. Before the refrigerant passes to the evaporator coils.",
+        "supplierName": "Elon Musk"
+    },
+    {
+        "availableQuantity": 1500,
+        "minimumOrder": 100,
+        "name": "Remote",
+        "img": "https://i.ibb.co/d49xGYx/remote.png",
+        "price": "$15.00",
+        "description": "The job of the compressor is to pressurize the refrigerant, thus raising its temperature. Due to the combined gas law that if pressure increases so does its temperature, when you compress.",
+        "supplierName": "Elon Musk"
     }
 ]
+
+
 
 
 

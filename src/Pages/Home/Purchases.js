@@ -3,8 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
 
-
-const Purchase = ({partDetails}) => {
+const Purchases = ({partDetails}) => {
     const [user, loading] = useAuthState(auth);
 
     const {_id, name, img, minimumOrder, availableQuantity, price } = partDetails;
@@ -12,8 +11,6 @@ const Purchase = ({partDetails}) => {
     if (loading) {
         return <Loading></Loading>
     }
-
-
     return (
         <>
            <div>
@@ -43,4 +40,4 @@ const Purchase = ({partDetails}) => {
     );
 };
 
-export default Purchase;
+export default Purchases;

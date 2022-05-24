@@ -1,13 +1,14 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
-const Part = ({ part }) => {
-    const { _id, name, img, description, minimumOrder, availableQuantity, price } = part;
+const Part = ({ part, setPartDetails }) => {
+    const { name, img, description, minimumOrder, availableQuantity, price } = part;
 
-    const navigate = useNavigate();
-    const navigateToPurchase = id => {
-        navigate(`/purchase/${id}`)
-    }
+    // const navigate = useNavigate();
+    // const navigateToPurchase = id => {
+    //     navigate(`/purchase/${id}`)
+    // }
 
     return (
         <>
@@ -22,7 +23,8 @@ const Part = ({ part }) => {
                     <h2 className='font-bold'>Minimum Order : <span className='text-primary'>{minimumOrder}</span></h2>
                     <small className='font-bold text-primary'>{description}</small>
                     <div className="card-actions">
-                        <button onClick={() => navigateToPurchase(_id)} className="btn btn-primary mt-2 text-black font-bold uppercase bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500">Purchase</button>
+                        <button className="btn btn-primary mt-2 text-black font-bold uppercase bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500"><Link to="/allParts">See All Parts</Link></button>
+                       
                     </div>
                 </div>
             </div>
