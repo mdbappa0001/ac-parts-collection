@@ -3,9 +3,9 @@ import Part from './Part';
 import Purchases from './Purchases';
 
 const Parts = () => {
-
-const [parts, setParts] = useState([]);
 const [partDetails, setPartDetails] = useState(null);
+const [parts, setParts] = useState([]);
+
 
 useEffect( ()=>{
     fetch('http://localhost:5000/service')
