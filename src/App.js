@@ -22,6 +22,7 @@ import AddAPrduct from './Pages/DashBoard/AddAPrduct';
 import ManageProduct from './Pages/DashBoard/ManageProduct';
 import MakeAdmin from './Pages/DashBoard/MakeAdmin';
 import RequireAdmin from './Pages/Login/RequireAdmin';
+import Payment from './Pages/DashBoard/Payment';
 
 
 export const PurchaseContext = createContext();
@@ -55,12 +56,13 @@ function App() {
               <DashBoard></DashBoard>
             </RequireAuth>
           }>
-            <Route index element={<MyOrders></MyOrders>}></Route>
+            <Route index element={<MyProfile></MyProfile>}></Route>
+            <Route path='order' element={<MyOrders></MyOrders>}></Route>
+            <Route path='payment/:id' element={<Payment></Payment>}></Route>
             <Route path='review' element={<AddReview></AddReview>}></Route>
-            <Route path='profile' element={<MyProfile></MyProfile>}></Route>
-            <Route path='manageAllOrders' element={<ManageAllOrders></ManageAllOrders>}></Route>
-            <Route path='addProducts' element={<AddAPrduct></AddAPrduct>}></Route>
-            <Route path='manageProduct' element={<ManageProduct></ManageProduct>}></Route>
+            <Route path='manageAllOrders' element={<RequireAdmin><ManageAllOrders></ManageAllOrders></RequireAdmin>}></Route>
+            <Route path='addProducts' element={<RequireAdmin><AddAPrduct></AddAPrduct></RequireAdmin>}></Route>
+            <Route path='manageProduct' element={<RequireAdmin><ManageProduct></ManageProduct></RequireAdmin>}></Route>
             <Route path='makeAdmin' element={<RequireAdmin><MakeAdmin></MakeAdmin></RequireAdmin>}></Route>
           </Route>
           <Route path='/blogs' element={<Blogs></Blogs>}></Route>

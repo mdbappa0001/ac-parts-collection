@@ -1,6 +1,6 @@
 [
     {
-        "minimumOrder": 200,
+        "minimumOrder": 100,
         "availableQuantity": 2000,
         "name": "Compressor",
         "img": "https://i.ibb.co/gtwmQMS/compressor.png",
@@ -10,7 +10,7 @@
     },
     {
         "availableQuantity": 1500,
-        "minimumOrder": 150,
+        "minimumOrder": 100,
         "name": "Condenser Coil",
         "img": "https://i.ibb.co/N9ktqkk/condenser-Coil.png",
         "price": "$90.00",

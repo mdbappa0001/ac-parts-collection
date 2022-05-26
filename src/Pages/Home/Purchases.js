@@ -6,7 +6,7 @@ import Loading from '../Shared/Loading';
 const Purchases = ({ partDetails }) => {
     const [user, loading] = useAuthState(auth);
 
-    const { _id, name, img, minimumOrder, availableQuantity, price } = partDetails;
+    const { _id, name, img, price } = partDetails;
 
     if (loading) {
         return <Loading></Loading>

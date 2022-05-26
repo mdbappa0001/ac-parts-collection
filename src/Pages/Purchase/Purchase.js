@@ -36,9 +36,11 @@ const Purchase = ({ partDetails, setPartDetails }) => {
             partsName: name,
             userName: user.displayName,
             user: user.email,
+            price,
             orderQuantity:order,
             address:event.target.address.value,
             phone: event.target.phone.value,
+            img:event.target.img.value
         }
 
 
@@ -77,6 +79,7 @@ const Purchase = ({ partDetails, setPartDetails }) => {
                             <input type="text" disabled value={user?.email} className="input input-bordered w-full max-w-xs font-extrabold" />
                             <input type="number" name='order' placeholder="Minimum Order Quantity = 100 " className="input input-bordered w-full max-w-xs" />
                             <input type="text" name='address' placeholder="Address" className="input input-bordered w-full max-w-xs" />
+                            <input type="text" name='img' placeholder="Image URL" className="input input-bordered w-full max-w-xs" />
                             <input type="number" name='phone' placeholder="Phone Number" className="input input-bordered w-full max-w-xs" />
                             <input type="submit" value="Submit" className="btn btn-secondary w-80" />
                         </form>
