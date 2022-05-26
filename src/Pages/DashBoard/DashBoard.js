@@ -8,6 +8,7 @@ const DashBoard = () => {
     const [user] = useAuthState(auth);
     const [admin] = useAdmin(user);
     return (
+        <>
         <div className="drawer drawer-mobile">
             <input id="dashboard-sidebar" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
@@ -36,6 +37,7 @@ const DashBoard = () => {
 
             </div>
         </div>
+        </>
     );
 };
 
