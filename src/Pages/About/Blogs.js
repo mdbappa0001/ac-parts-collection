@@ -1,8 +1,10 @@
 import React from 'react';
 import react from "../../images/react.png";
+import Footer from '../Shared/Footer';
 
 const Blogs = () => {
     return (
+        <>
         <div>
             <div className="hero min-h-screen">
                 <div className="hero-content flex-col lg:flex-row">
@@ -56,6 +58,8 @@ const Blogs = () => {
 
 
         </div>
+        <Footer></Footer>
+        </>
     );
 };
 

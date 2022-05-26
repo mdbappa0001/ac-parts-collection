@@ -6,7 +6,7 @@ const AddAProduct = () => {
     const { register, handleSubmit } = useForm();
 
   const onSubmit = data =>{
-      console.log(data);
+    //   console.log(data);
       const url = `http://localhost:5000/service`;
       fetch(url, {
           method: 'POST',

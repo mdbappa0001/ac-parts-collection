@@ -77,10 +77,10 @@ const Purchase = ({ partDetails, setPartDetails }) => {
                             <input type="text" disabled value={_id} className="input input-bordered w-full max-w-xs font-extrabold" />
                             <input type="text" disabled value={user?.displayName} className="input input-bordered w-full max-w-xs font-extrabold" />
                             <input type="text" disabled value={user?.email} className="input input-bordered w-full max-w-xs font-extrabold" />
-                            <input type="number" name='order' placeholder="Minimum Order Quantity = 100 " className="input input-bordered w-full max-w-xs" />
-                            <input type="text" name='address' placeholder="Address" className="input input-bordered w-full max-w-xs" />
-                            <input type="text" name='img' placeholder="Image URL" className="input input-bordered w-full max-w-xs" />
-                            <input type="number" name='phone' placeholder="Phone Number" className="input input-bordered w-full max-w-xs" />
+                            <input type="number" name='order' placeholder="Minimum Order Quantity = 100 " className="input input-bordered w-full max-w-xs" required/>
+                            <input type="text" name='address' placeholder="Address" className="input input-bordered w-full max-w-xs" required/>
+                            <input type="text" name='img' placeholder="Image URL" className="input input-bordered w-full max-w-xs" required/>
+                            <input type="number" name='phone' placeholder="Phone Number" className="input input-bordered w-full max-w-xs" required/>
                             <input type="submit" value="Submit" className="btn btn-secondary w-80" />
                         </form>
 

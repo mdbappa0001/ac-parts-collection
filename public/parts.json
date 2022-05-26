@@ -3,7 +3,7 @@
         "minimumOrder": 100,
         "availableQuantity": 2000,
         "name": "Compressor",
-        "img": "https://i.ibb.co/gtwmQMS/compressor.png",
+        "img": "https://i.ibb.co/1vDKWmQ/compressor.png",
         "price": "$65.00",
         "description": "The job of the compressor is to pressurize the refrigerant, thus raising its temperature. Due to the combined gas law that if pressure increases so does its temperature, when you compress.",
         "supplierName": "Lorem Cox"
@@ -12,7 +12,7 @@
         "availableQuantity": 1500,
         "minimumOrder": 100,
         "name": "Condenser Coil",
-        "img": "https://i.ibb.co/N9ktqkk/condenser-Coil.png",
+        "img": "https://i.ibb.co/SdRt271/condenser-Coil.png",
         "price": "$90.00",
         "description": "The condenser coil is in the outdoor air conditioning unit. It receives the high pressure, high temperature refrigerant from the compressor. You can think of it as the opposite of the evaporator coil.",
         "supplierName": "Pilan rox"
@@ -21,7 +21,7 @@
         "availableQuantity": 1200,
         "minimumOrder": 100,
         "name": "Expansion Valve",
-        "img": "https://i.ibb.co/Ln61yhx/expansion-Valve.png",
+        "img": "https://i.ibb.co/ZNvwPZd/expansion-Valve.png",
         "price": "$29.00",
         "description": "When the refrigerant leaves the condenser in its liquid state, it has dispersed heat, but it is still too hot to enter the evaporator coils. Before the refrigerant passes to the evaporator coils.",
         "supplierName": "Elon Musk"
@@ -30,7 +30,7 @@
         "availableQuantity": 1700,
         "minimumOrder": 100,
         "name": "Condenser",
-        "img": "https://i.ibb.co/K56PNN7/condenser.png",
+        "img": "https://i.ibb.co/KGzHHCL/condenser.png",
         "price": "$74.00",
         "description": "The condenser coil is in the outdoor air conditioning unit. It receives the high pressure, high temperature refrigerant from the compressor. You can think of it as the opposite of the evaporator coil.",
         "supplierName": "Pilan rox"
@@ -39,7 +39,7 @@
         "availableQuantity": 1100,
         "minimumOrder": 100,
         "name": "Cooler",
-        "img": "https://i.ibb.co/WKMCf9P/cooler-1.png",
+        "img": "https://i.ibb.co/pQ9T353/cooler-1.png",
         "price": "$55.00",
         "description": "When the refrigerant leaves the condenser in its liquid state, it has dispersed heat, but it is still too hot to enter the evaporator coils. Before the refrigerant passes to the evaporator coils.",
         "supplierName": "Elon Musk"
@@ -48,12 +48,22 @@
         "availableQuantity": 1500,
         "minimumOrder": 100,
         "name": "Remote",
-        "img": "https://i.ibb.co/d49xGYx/remote.png",
+        "img": "https://i.ibb.co/LQYGRCX/remote.png",
         "price": "$15.00",
         "description": "The job of the compressor is to pressurize the refrigerant, thus raising its temperature. Due to the combined gas law that if pressure increases so does its temperature, when you compress.",
         "supplierName": "Elon Musk"
     }
 ]
+
+
+
+
+// https://i.ibb.co/ZYKLvTq/pic-1.png
+// https://i.ibb.co/qBznSNT/pic-2.png
+// https://i.ibb.co/85qBPk7/pic-3.png
+// https://i.ibb.co/JpFHN3K/quote-img.png
+
+
 
 
 
