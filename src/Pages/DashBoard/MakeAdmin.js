@@ -3,7 +3,7 @@ import AdminRow from './AdminRow';
 
 const MakeAdmin = () => {
     const [users, setUsers] = useState([]);
-    fetch('http://localhost:5000/user', {
+    fetch('https://nameless-badlands-55078.herokuapp.com/user', {
         method: 'GET',
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -26,9 +26,9 @@ const MakeAdmin = () => {
                     </thead>
                     <tbody>
                         {users?.map((user, index) => <AdminRow
-                        key={user?.index}
-                        user={user}
-                        index = {index}
+                            key={user?.index}
+                            user={user}
+                            index={index}
                         ></AdminRow>)}
                     </tbody>
                 </table>

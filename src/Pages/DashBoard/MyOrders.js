@@ -10,7 +10,7 @@ const MyOrders = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/booking?user=${user.email}`)
+            fetch(`https://nameless-badlands-55078.herokuapp.com/booking?user=${user.email}`)
                 .then(res => res.json())
                 .then(data => setOrders(data))
         }
@@ -23,14 +23,14 @@ const MyOrders = () => {
                 <table class="table w-full">
                     <thead>
                         <tr>
-                        <th className='text-xl'>Image</th>
+                            <th className='text-xl'>Image</th>
                             <th className='text-xl'>Name</th>
-                            
+
                             <th className='text-xl'>Order Quantity</th>
                             <th className='text-xl'>Address</th>
                             <th className='text-xl'>Phone</th>
                             <th className='text-xl'>Payment</th>
-                           
+
                         </tr>
                     </thead>
                     <tbody>
@@ -38,15 +38,15 @@ const MyOrders = () => {
                             orders?.map((order, index) => <tr>
                                 <td className='text-xl font-bold w-24'><img src={order.img} alt="" /></td>
                                 <td className='text-xl font-extrabold text-primary'>{order.partsName}</td>
-                                
+
                                 <td className='text-xl font-bold'>{order.orderQuantity}</td>
                                 <td className='text-xl font-bold'>{order.address}</td>
                                 <td className='text-xl font-bold'>{order.phone}</td>
                                 <td className='text-xl font-bold'>
-                                {(order.price && !order.paid) && <Link to={`/dashboard/payment/${order._id}`}><button className='btn btn-xs btn-success'>pay</button></Link>}
-                                    {(order.price && order.paid) && 
+                                    {(order.price && !order.paid) && <Link to={`/dashboard/payment/${order._id}`}><button className='btn btn-xs btn-success'>pay</button></Link>}
+                                    {(order.price && order.paid) &&
                                         <p><span className='text-success'>paid</span></p>
-                                     }
+                                    }
                                 </td>
                             </tr>)
                         }

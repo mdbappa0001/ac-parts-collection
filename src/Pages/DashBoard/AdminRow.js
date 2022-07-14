@@ -1,26 +1,26 @@
 import React from 'react';
 import { toast } from 'react-toastify';
 
-const AdminRow = ({user, index}) => {
-    const {email, role} = user;
-    const makeAdmin = () =>{
-        fetch(`http://localhost:5000/user/admin/${email}`,{
+const AdminRow = ({ user, index }) => {
+    const { email, role } = user;
+    const makeAdmin = () => {
+        fetch(`https://nameless-badlands-55078.herokuapp.com/user/admin/${email}`, {
             method: 'PUT',
-            headers:{
+            headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
             }
         })
-        .then(res => {
-            if(res.status === 403){
-                toast.error('Sorry!!! You can not make another admin');
-            }
-           return res.json()
-        })
-        .then(data =>{
-            if(data.modifiedCount > 0){
-            toast.success(`Successfully made an admin`);
-            }
-        })
+            .then(res => {
+                if (res.status === 403) {
+                    toast.error('Sorry!!! You can not make another admin');
+                }
+                return res.json()
+            })
+            .then(data => {
+                if (data.modifiedCount > 0) {
+                    toast.success(`Successfully made an admin`);
+                }
+            })
     }
     return (
         <tr>

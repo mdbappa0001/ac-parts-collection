@@ -1,6 +1,5 @@
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
 import React, { useState } from 'react';
-import { toast } from 'react-toastify';
 
 const CheckoutForm = () => {
     const stripe = useStripe();

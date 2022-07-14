@@ -7,20 +7,20 @@ const DeleteConfirmModal = ({ allPart, setAllParts, deletingPart, setDeletingPar
 
 
     const handleDelete = id => {
-            const url = `http://localhost:5000/service/${id}`;
-            fetch(url, {
-                method: 'DELETE'
+        const url = `https://nameless-badlands-55078.herokuapp.com/service/${id}`;
+        fetch(url, {
+            method: 'DELETE'
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.deletedCount) {
+                    toast.success(`Product : ${name} is deleted`)
+                    const remaining = allPart.filter(allPart => allPart._id !== id)
+                    setAllParts(remaining);
+                    setDeletingPart(null);
+                }
             })
-                .then(res => res.json())
-                .then(data => {
-                    console.log(data);
-                    if (data.deletedCount) {
-                        toast.success(`Product : ${name} is deleted`)
-                        const remaining = allPart.filter(allPart => allPart._id !== id)
-                        setAllParts(remaining);
-                        setDeletingPart(null);
-                    }
-                })
     }
 
 

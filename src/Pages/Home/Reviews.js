@@ -7,12 +7,12 @@ import quote from "../../images/quote-img.png";
 const Reviews = () => {
     const [allReviews, setAllReviews] = useState([]);
 
-    useEffect( () =>{
-        fetch('http://localhost:5000/review')
-        .then(res => res.json())
-        .then(data => setAllReviews(data))
-       
-    } ,[allReviews])
+    useEffect(() => {
+        fetch('https://nameless-badlands-55078.herokuapp.com/review')
+            .then(res => res.json())
+            .then(data => setAllReviews(data))
+
+    }, [allReviews])
 
     return (
         <>
@@ -86,37 +86,37 @@ const Reviews = () => {
 
 
 
-               <div className='mt-8 mb-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-screen'>
-                   {
-                       allReviews.map(allReview => 
+                <div className='mt-8 mb-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-screen'>
+                    {
+                        allReviews.map(allReview =>
 
-                        <div>
-                        <div className="card w-96 bg-base-100 shadow-xl">
-                            <div className="card-body">
-                                <p className='font-bold'>{allReview.description}</p>
-                            </div>
-                            <div className='flex items-center'>
-                                <div className="avatar px-8 py-5">
-                                    <div className="w-16 rounded-full ring ring-primary ring-offset-base-100 mr-5">
-                                        <img src={allReview.img} alt='' />
+                            <div>
+                                <div className="card w-96 bg-base-100 shadow-xl">
+                                    <div className="card-body">
+                                        <p className='font-bold'>{allReview.description}</p>
+                                    </div>
+                                    <div className='flex items-center'>
+                                        <div className="avatar px-8 py-5">
+                                            <div className="w-16 rounded-full ring ring-primary ring-offset-base-100 mr-5">
+                                                <img src={allReview.img} alt='' />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h4 className='text-xl font-bold'>{allReview.name}</h4>
+                                            <small className='font-extrabold'>*{allReview.price}</small>
+                                        </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <h4 className='text-xl font-bold'>{allReview.name}</h4>
-                                    <small className='font-extrabold'>*{allReview.price}</small>
-                                </div>
                             </div>
-                        </div>
-                    </div>
                         )
-                   }
-               </div>
+                    }
+                </div>
 
 
 
             </div>
 
-            
+
         </>
     );
 };

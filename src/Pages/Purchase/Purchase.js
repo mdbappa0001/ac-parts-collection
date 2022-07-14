@@ -24,11 +24,11 @@ const Purchase = ({ partDetails, setPartDetails }) => {
         if (order < num) {
             toast('sorry sir!!! Can not order less than minimum order quantity')
         }
-        else{
+        else {
             toast('Congratulation sir. Your order is booked.')
             setNum(order)
         }
-    
+
 
 
         const booking = {
@@ -37,14 +37,14 @@ const Purchase = ({ partDetails, setPartDetails }) => {
             userName: user.displayName,
             user: user.email,
             price,
-            orderQuantity:order,
-            address:event.target.address.value,
+            orderQuantity: order,
+            address: event.target.address.value,
             phone: event.target.phone.value,
-            img:event.target.img.value
+            img: event.target.img.value
         }
 
 
-        fetch('http://localhost:5000/booking', {
+        fetch('https://nameless-badlands-55078.herokuapp.com/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -77,10 +77,10 @@ const Purchase = ({ partDetails, setPartDetails }) => {
                             <input type="text" disabled value={_id} className="input input-bordered w-full max-w-xs font-extrabold" />
                             <input type="text" disabled value={user?.displayName} className="input input-bordered w-full max-w-xs font-extrabold" />
                             <input type="text" disabled value={user?.email} className="input input-bordered w-full max-w-xs font-extrabold" />
-                            <input type="number" name='order' placeholder="Minimum Order Quantity = 100 " className="input input-bordered w-full max-w-xs" required/>
-                            <input type="text" name='address' placeholder="Address" className="input input-bordered w-full max-w-xs" required/>
-                            <input type="text" name='img' placeholder="Image URL" className="input input-bordered w-full max-w-xs" required/>
-                            <input type="number" name='phone' placeholder="Phone Number" className="input input-bordered w-full max-w-xs" required/>
+                            <input type="number" name='order' placeholder="Minimum Order Quantity = 100 " className="input input-bordered w-full max-w-xs" required />
+                            <input type="text" name='address' placeholder="Address" className="input input-bordered w-full max-w-xs" required />
+                            <input type="text" name='img' placeholder="Image URL" className="input input-bordered w-full max-w-xs" required />
+                            <input type="number" name='phone' placeholder="Phone Number" className="input input-bordered w-full max-w-xs" required />
                             <input type="submit" value="Submit" className="btn btn-secondary w-80" />
                         </form>
 
