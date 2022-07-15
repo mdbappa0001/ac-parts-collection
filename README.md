@@ -1,6 +1,4 @@
-# A.C. Collection
-
-Private Repo Link [Create React App](https://ac-collection.web.app/).
+# [A.C. Parts Collection](https://ac-collection.web.app/)
 
 
 ## About This Projects
@@ -12,7 +10,7 @@ Private Repo Link [Create React App](https://ac-collection.web.app/).
 - Here is also a dashboard page where we show admin role , add item , add review by using nested route.
 - This project also authentication based.
 
-## Frameword that i used in this project
+## Technology that i used in this project
 
 - React Tailwind framework (daisyui)
 - React Hook Form
@@ -20,4 +18,18 @@ Private Repo Link [Create React App](https://ac-collection.web.app/).
 - React Tailwind
 - React Firebase Hooks
 - React Query
+- JWT
+- Pament Gateway
+- React Toastify
+- MongoDb
+- Express.Js
+
+
+## Live Link
+https://ac-collection.web.app/
+
+
+# Website Demo
+![CHEESE!](src/images/A.C.%20Collection.png)
+
 
